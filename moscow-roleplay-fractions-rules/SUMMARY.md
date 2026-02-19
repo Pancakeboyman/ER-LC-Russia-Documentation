@@ -1,6 +1,9 @@
 # Table of contents
 
-* [Page 1](README.md)
+## 📜 Правила Фракций <a href="#fractions-rules" id="fractions-rules"></a>
+
+* [📜 Правила Фракций](README.md)
+* [⚖️ Правила Лидеров](fractions-rules/lider-rules.md)
 
 ## Group 2
 

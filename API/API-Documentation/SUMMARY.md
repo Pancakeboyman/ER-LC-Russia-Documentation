@@ -9,4 +9,4 @@
   * [🚗 MRP ER:LC API V1](for-developers/documentation-api-v1/mrp-erlc-api-v1.md)
   * [📊 MRP API Статистики V1](for-developers/documentation-api-v1/mrp-stats-api-v1.md)
 * [🚧 Коды Ошибок](for-developers/error-codes.md)
-* [🚨 Рейт Лимиты](for-developers/rate-limits.md)
+* [🚨 Лимиты Запросов](for-developers/rate-limits.md)

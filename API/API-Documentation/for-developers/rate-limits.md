@@ -86,7 +86,7 @@ description: >-
 
 ```json
 {
-  "detail": "command_queue_full"
+  "detail": "CommandQueueFull"
 }
 ```
 

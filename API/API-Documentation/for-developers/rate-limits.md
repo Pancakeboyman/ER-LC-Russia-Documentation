@@ -7,12 +7,12 @@ description: >-
 # 🚨 Лимиты Запросов
 
 {% hint style="warning" %}
-## E**R:LC Russia API не поддерживает хостинги ботов, такие как Bot Ghost.**
+## E**R:LC Россия API не поддерживает хостинги ботов, такие как Bot Ghost.**
 
 Сервисы вроде BotGhost хостят много приложений под одним IP, что приводит к частым Rate Limit. Не используйте BotGhost с нашим API.
 {% endhint %}
 
-<h4 align="center">Глобальный Rate Limit</h4>
+<h3 align="center">Глобальный Rate Limit</h3>
 
 | Категория эндпоинтов               | Лимит                |
 | ---------------------------------- | -------------------- |
@@ -36,44 +36,79 @@ description: >-
 | `/erlc/server/command`     | Очередь: 100 команд | Выполнение команд (не подвержен rate limit) |
 | `/stats/*`                 | 20 запросов/мин     | Публичные эндпоинты статистики              |
 
-<h4 align="center">Защита От Cпама</h4>
+<h3 align="center">Защита От Cпама</h3>
 
-Приложения, отправляющие **100 000+ запросов в секунду**, будут автоматически заблокированы на **30 минут**.
+Приложения, отправляющие **500+ запросов в секунду**, будут автоматически заблокированы.
 
-<p align="center"><strong>Заголовки Rate Limit</strong></p>
+<p align="center"><strong>Уровни Защиты От Спама</strong></p>
+
+| Уровень     | Порог (запросов/сек) | Блокировка | Код ошибки                     |
+| ----------- | -------------------- | ---------- | ------------------------------ |
+| **Level 1** | 500+                 | 5 минут    | `spam_detected_level_1` (5020) |
+| **Level 2** | 5000+                | 15 минут   | `spam_detected_level_2` (5021) |
+| **Level 3** | 100000+              | 60 минут   | `spam_detected_level_3` (5022) |
+
+<h4 align="center"><strong>Ответ При Превышении Лимита (Rate Limit)</strong></h4>
+
+```json
+{
+  "code": 5016,
+  "message": "rate_limit_exceeded",
+  "retry_after": 60
+}
+```
+
+<h4 align="center"><strong>Ответ При Блокировке За Спам (Уровень 1)</strong></h4>
+
+```json
+{
+  "code": 5020,
+  "message": "spam_detected_level_1",
+  "blocked_until": "2026-02-23T12:35:00.000Z",
+  "remaining_seconds": 300
+}
+```
+
+<h4 align="center"><strong>Ответ При Блокировке За Спам (Уровень 2)</strong></h4>
+
+```json
+{
+  "code": 5021,
+  "message": "spam_detected_level_2",
+  "blocked_until": "2026-02-23T12:45:00.000Z",
+  "remaining_seconds": 900
+}
+```
+
+<h4 align="center"><strong>Ответ При Блокировке За Спам (Уровень 3)</strong></h4>
+
+```json
+{
+  "code": 5022,
+  "message": "spam_detected_level_3",
+  "blocked_until": "2026-02-23T13:30:00.000Z",
+  "remaining_seconds": 3600
+}
+```
+
+<h4 align="center"><strong>Ответ При Активной Блокировке</strong></h4>
+
+```json
+{
+  "code": 5023,
+  "message": "spam_blocked",
+  "blocked_until": "2026-02-23T12:35:00.000Z",
+  "remaining_seconds": 245
+}
+```
+
+<h4 align="center"><strong>Заголовки Rate Limit</strong></h4>
 
 | Заголовок             | Пример значения  | Описание                                          |
 | --------------------- | ---------------- | ------------------------------------------------- |
 | `RateLimit-Limit`     | 120              | Максимальное количество запросов до получения 429 |
 | `RateLimit-Remaining` | 119              | Оставшееся количество запросов                    |
 | `RateLimit-Reset`     | _Unix-timestamp_ | Unix-время, когда лимит будет сброшен             |
-
-<h4 align="center">Превышение Лимита</h4>
-
-При превышении лимита вы получите **HTTP-ответ 429** с сообщением в теле запроса.
-
-Также будут включены стандартные заголовки Rate Limit (описанные выше).
-
-<p align="center"><strong>Ответ При Блокировке За Спам</strong></p>
-
-При блокировке за спам:
-
-```json
-{
-  "detail": "spam_detected",
-  "blocked_until": "2026-02-22T15:30:00.000Z"
-}
-```
-
-<p align="center"><strong>Ответ При Активной Блокировке</strong></p>
-
-```json
-{
-  "detail": "spam_blocked",
-  "blocked_until": "2026-02-22T15:30:00.000Z",
-  "remaining_seconds": 1800
-}
-```
 
 <h4 align="center">Очередь Команд</h4>
 
@@ -86,7 +121,8 @@ description: >-
 
 ```json
 {
-  "detail": "CommandQueueFull"
+  "code": 5015,
+  "message": "CommandQueueFull"
 }
 ```
 

@@ -1,7 +1,7 @@
 ---
 cover: ../../.gitbook/assets/Moscow_RolePlay.png
-coverY: 50.18546365914787
-coverHeight: 142
+coverY: -45.81453634085213
+coverHeight: 215
 layout:
   width: default
   cover:

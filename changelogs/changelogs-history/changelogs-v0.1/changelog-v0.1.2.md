@@ -1,6 +1,12 @@
 ---
+cover: ../../.gitbook/assets/1_Moscow_RolePlay.png
+coverY: -65.6842105263158
+coverHeight: 220
 layout:
   width: default
+  cover:
+    visible: true
+    size: hero
   title:
     visible: false
   description:
@@ -152,8 +158,6 @@ layout:
 
 * **Используйте команду:** `/настроить`
 * **Статус:** Обновление загружено, перезапустите Discord для обновления команд.
-
-**Мы продолжаем работу над улучшением функционала. Спасибо, что вы с нами!**&#x20;
 
 ***
 

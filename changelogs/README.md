@@ -1,7 +1,7 @@
 ---
 hidden: true
-cover: .gitbook/assets/Баннеры История Изменений Moscow RolePlay.png
-coverY: -9.431578947368422
+cover: .gitbook/assets/Баннеры История Изменений Moscow RolePlay 2.png
+coverY: 0
 coverHeight: 217
 layout:
   width: default

@@ -155,4 +155,4 @@ layout:
 
 ***
 
-<p align="center"><sub>© 2026 Moscow RolePlay. Все права защищены.</sub></p>
+<p align="center"><sub>© 2026 ER:LC Россия. Все права защищены.</sub></p>

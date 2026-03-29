@@ -171,10 +171,29 @@ layout:
   * Звук должен соответствовать сцене и не мешать другим.
   * Запрещено: музыка, мемы, троллинг, мат, фоновые шумы, попытки обхода лимита (склейка, повтор, наложение).
   * Один эффект за раз, без "обходов" — любые попытки удлинить звучание считаются нарушением.
-* **G-2** – **Использование внутриигрового бумбокса**
-  * Разрешено использовать бумбокс в любых игровых моментах, если это не нарушает Roblox TOS.
-  * Запрещено использование любых звуков и треков, противоречащих правилам Roblox.
-  * Вся ответственность за соблюдение TOS лежит на игроке.
+* **G-2** – <mark style="color:red;">**Использование внутриигрового бумбокса**</mark> <mark style="color:green;">Разрешено использовать бумбокс в любых игровых моментах, если это не нарушает</mark> [<mark style="color:green;">**Roblox TOS**</mark>](https://wiki.erlcrussia.xyz/documentation-moscow-roleplay/general-pravila/rp-terminy#osnovnye-polozheniya-roblox-tos)<mark style="color:green;">.</mark>
+  * <mark style="color:red;">Разрешено использовать бумбокс в любых игровых моментах, если это не нарушает Roblox TOS.</mark>
+  * <mark style="color:red;">Запрещено использование любых звуков и треков, противоречащих правилам Roblox.</mark>
+  * <mark style="color:red;">Вся ответственность за соблюдение TOS лежит на игроке.</mark>
+  * <mark style="color:green;">**G-2.1**</mark> <mark style="color:green;"></mark><mark style="color:green;">— Запрещено использование любых звуков и треков, противоречащих правилам Roblox.</mark>
+  * <mark style="color:green;">**G-2.2**</mark> <mark style="color:green;"></mark><mark style="color:green;">— Если бумбокс в игре мешает важным переговорам в Discord-сцене, вы обязаны выключить его или сделать тише по первому требованию участников или персонала.</mark>
+  * <mark style="color:green;">**G-2.3**</mark> <mark style="color:green;"></mark><mark style="color:green;">— Вся ответственность за соблюдение TOS лежит на игроке.</mark>
+* <mark style="color:green;">**G-3**</mark> <mark style="color:green;"></mark><mark style="color:green;">— Нарушение данного правила приравнивается к помехе RP-процессу и может повлечь за собой удаление из канала или дисциплинарные меры.</mark>
+  * <mark style="color:green;">**G-3.1**</mark> <mark style="color:green;"></mark><mark style="color:green;">— Присутствие в голосовых каналах RP-сцен и раций разрешено только тем игрокам, которые находятся в игре на сервере.</mark>
+  * <mark style="color:green;">**G-3.2**</mark> <mark style="color:green;"></mark><mark style="color:green;">—</mark> <mark style="color:green;"></mark><mark style="color:green;">**Каналы Раций**</mark>
+    * <mark style="color:green;">**G-3.2.1**</mark> <mark style="color:green;"></mark><mark style="color:green;">— Эти каналы являются IC (In Character) зоной.</mark>
+    * <mark style="color:green;">**G-3.2.2**</mark> <mark style="color:green;"></mark><mark style="color:green;">— Соблюдайте субординацию и профессиональный тон. Никакого крика или лишних разговоров.</mark>
+    * <mark style="color:green;">**G-3.2.3**</mark> <mark style="color:green;"></mark><mark style="color:green;">— Диспетчер (если он есть) имеет статус</mark> <mark style="color:green;"></mark><mark style="color:green;">**приоритетного режима**</mark><mark style="color:green;">. Когда он говорит — все молчат.</mark>
+  * <mark style="color:green;">**G-3.3**</mark> <mark style="color:green;"></mark><mark style="color:green;">—</mark> <mark style="color:green;"></mark><mark style="color:green;">**Каналы РП Сцен**</mark>
+    * <mark style="color:green;">**G-3.3.1**</mark> <mark style="color:green;"></mark><mark style="color:green;">— Использование OOC-информации (внеигровых сообщений) разрешено только при предварительном предупреждении — например, с пометкой «OOC информация» или «Не РП информация». Без предупреждения канал считается строго IC и используется исключительно для ролевого отыгрыша. Запрещены любые внеигровые разговоры, оффтоп, технические обсуждения и OOC-конфликты между игроками.</mark>
+    * <mark style="color:green;">**G-3.3.2**</mark> <mark style="color:green;"></mark><mark style="color:green;">— IC-конфликты, происходящие в рамках ролевого процесса, разрешены.</mark>
+    * <mark style="color:green;">**G-3.3.3**</mark> <mark style="color:green;"></mark><mark style="color:green;">— Уважайте других участников сцены. Не перекрикивайте друг друга, дайте договорить оппоненту.</mark>
+  * <mark style="color:green;">**G-3.4**</mark> <mark style="color:green;"></mark><mark style="color:green;">—</mark> <mark style="color:green;"></mark><mark style="color:green;">**Каналы Мод-Сцен**</mark>
+    * <mark style="color:green;">**G-3.4.1**</mark> <mark style="color:green;"></mark><mark style="color:green;">— Разрешается обсуждать только вопросы, относящиеся к данной сцене. Любая посторонняя информация запрещена.</mark>
+    * <mark style="color:green;">**G-3.4.2**</mark> <mark style="color:green;"></mark><mark style="color:green;">— Когда говорит кто-то из персонала — все участники молчат.</mark>
+    * <mark style="color:green;">**G-3.4.3**</mark> <mark style="color:green;"></mark><mark style="color:green;">— Говорите только тогда, когда вам дали слово. Перебивание персонала во время разбирательств карается мутом.</mark>
+    * <mark style="color:green;">**G-3.4.4**</mark> <mark style="color:green;"></mark><mark style="color:green;">— Будьте готовы включить демонстрацию экрана/прислать ссылку на запись (лучший вариант) по требованию персонала.</mark>
+    * <mark style="color:green;">**G-3.4.5**</mark> <mark style="color:green;"></mark><mark style="color:green;">— Любые оскорбления, переход на личности или агрессия приведут к ужесточению наказания.</mark>
 
 </details>
 
